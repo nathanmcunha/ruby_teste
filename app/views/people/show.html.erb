@@ -1,0 +1,21 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  
+  
+  <ul class="list-group">
+  <strong>Name</strong>
+    <li class="list-group-item">
+      <%= @person.name %>
+    </li><br>
+    <strong>Age</strong>
+    <li class="list-group-item">
+      
+      <%= @person.age %>
+    </li>
+  
+  </ul>
+  
+  <div class="btn-group" role="group" aria-label="Basic example">
+      <%= link_to 'Back', people_path ,:class =>'btn btn-primary'%>
+  </div>
+</div>
